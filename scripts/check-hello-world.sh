@@ -4,7 +4,7 @@ USER=$1
 
 url=$(grep 'URL of my repository' README.md | sed 's/URL of my repository://' | sed 's/^ *//g')
 if [ -z "$url" ]; then
-    echo URL should be on same line with \"URL of my repository:\"
+    echo There does not seem to be a github url on this line: \"URL of my repository:\"
     exit 1
 fi
 is_this_repo=$(echo $url | grep github.com/ua-gist-open-source)
