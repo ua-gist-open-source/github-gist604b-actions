@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 USER=$1
 
 echo 1
