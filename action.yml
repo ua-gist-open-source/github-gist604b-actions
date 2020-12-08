@@ -8,6 +8,6 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  entrypoint: 'check-hello-world.sh'
+  entrypoint: '/check-hello-world.sh'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.user }}
